@@ -1,0 +1,99 @@
+/* убираем точки перед списком */
+li {
+  list-style-type: none;
+}
+
+/* задаем цвет фона страницы  */
+body {
+  background: #f8f8f8;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* оформляем заголовкa */
+.title {
+  background-color: white;
+  height: 50px;
+}
+.title__text {
+  color: #7e7e82;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 35px;
+  padding-top: 20px;
+}
+
+/* стили для блока брендов */
+.main__brand-content {
+  border: 2px solid red;
+}
+
+/*  контейнер брендов */
+.brands_container {
+  max-width: 1280px;
+  display: flex;
+  border: 4px solid yellow;
+  height: 50%;
+  align-items: center;
+  margin: 25px 32px 16px 32px;
+}
+
+/* стили для кнопок бренда */
+.main__item {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 75px;
+}
+.main__brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  height: 220px;
+}
+.hidden {
+  display: none;
+}
+
+/*  картинка стрелка в кнопке бренда */
+.main__item::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(img/go.png);
+}
+
+/* стили для кнопки */
+
+.main__brand_btn {
+  margin-left: 35px;
+}
+.main__brand_btn_more {
+  display: flex;
+  align-items: center;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 10px;
+  background: none;
+  border: none;
+}
+.main__brand_btn_more:hover {
+  background-color: cornflowerblue;
+}
+.main__brand_btn_more::before {
+  content: "";
+  background: url(img/expand.png);
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}

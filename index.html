@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="TTLakes/stylesheet.css" />
+
+    <title>block1.5</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="title__text">Ремонт техники различных брендов</h1>
+      </div>
+      <div class="main__brand-content swiper">
+        <div class="brands_container swiper-container">
+          <ul class="main__brand-list swiper-wrapper">
+            <li class="main__item swiper-slide">
+              <a class="main__link brands__link" href="#">
+                <img class="brands__logo" src="img/lenovo.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/samsung.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/apple.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/viewsonic.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/bosch.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/hp.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/acer.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item swiper-slide">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/sony.png" alt="" />
+              </a>
+            </li>
+          </ul>
+          <ul class="hidden swiper-slide">
+            <li class="main__item">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/lenovo.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/samsung.png" alt="" />
+              </a>
+            </li>
+
+            <li class="main__item">
+              <a class="main__link" href="#">
+                <img class="brands__logo" src="img/apple.png" alt="" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="show-more__button">
+      <button type="button" class="main__brand_btn_more button">
+        показать все
+      </button>
+    </div>
+  </body>
+  <script>
+    const items = document.querySelector(".main__brand-list");
+    const hidden = document.querySelector(".hidden");
+    const button = document.querySelector(".main__brand_btn_more");
+    console.log(items);
+    console.log(hidden);
+    console.log(button);
+    button.addEventListener("click", function () {
+      if (button.innerText === "Показать всё") {
+        hidden.forEach((hidden) => (hidden.style.display = "flex"));
+
+        button.innerText = "Скрыть";
+      } else if (button.innerText === "Скрыть") {
+        brands.forEach((hidden) => (hidden.style.display = "none"));
+
+        button.innerText = "показать всё";
+      }
+    });
+  </script>
+</html>
